@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Leve</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/monk-grid/flexalign.css">
+  </head>
+  <body>
+
+    <div class="container center-center site wrap-tablet">
+      <div class="item flex basis3 opt-scroll">
+
+        <div class="container column" >
+          <div class="opt ">
+            <h1>CONTAINER</h1>
+
+            <div class="input">
+              <label for="">Row/Column</label>
+              <form class="">
+                <ul>
+                  <li><input id="row" type="radio" name="rowcolumn" value="row" checked> Row</li>
+                  <li><input id="row-reverse" type="radio" name="rowcolumn" value="row-reverse"> Row-reverse</li>
+                  <li><input id="column" type="radio" name="rowcolumn" value="column"> Column</li>
+                  <li><input id="column-reverse" type="radio" name="rowcolumn" value="column-reverse"> Column-reverse</li>
+                </ul>
+                <p><strong>Default</strong> is <strong>Row</strong></p>
+              </form>
+            </div>
+
+
+            <div class="input">
+              <label for="">Wrap/Nowrap</label>
+
+              <form class="" >
+                <ul>
+                  <li><input id="nowrap" type="radio" name="wrapnowrap" value="nowrap" checked> Nowrap</li>
+                  <li><input id="wrap" type="radio" name="wrapnowrap" value="wrap"> Wrap</li>
+                  <li><input id="wrapreverse" type="radio" name="wrapnowrap" value="wrapreverse"> Wrap-reverse</li>
+                </ul>
+                <p>
+                  Using the <strong>Wrap</strong> in the <strong>Container</strong> and defining a <strong>basisX</strong>, it will "break" whenever it reaches the width X, if we add the <strong>Flex</strong> class, it will break to <strong>widthX </strong>but still occupy all space, as if <strong>Basis</strong> were the min-width.
+                </p>
+              </form>
+            </div>
+
+
+            <div class="input">
+              <label for="">Position</label>
+              <form class="" >
+                <ul>
+                  <li><input id="tl" type="radio" name="position"> top-left</li>
+                  <li><input id="tc" type="radio" name="position"> top-center</li>
+                  <li><input id="tr" type="radio" name="position"> top-right</li>
+                  <li><input id="cl" type="radio" name="position"> center-left</li>
+                  <li><input id="cc" type="radio" name="position" checked> center-center</li>
+                  <li><input id="cr" type="radio" name="position"> center-right</li>
+                  <li><input id="bl" type="radio" name="position"> bottom-left</li>
+                  <li><input id="bc" type="radio" name="position"> bottom-center</li>
+                  <li><input id="br" type="radio" name="position"> bottom-right</li>
+
+                  <li><input id="sb" type="radio" name="position"> space-between</li>
+                  <li><input id="sbt" type="radio" name="position"> space-between-top</li>
+                  <li><input id="sbc" type="radio" name="position"> space-between-center</li>
+                  <li><input id="sbb" type="radio" name="position"> space-between-bottom</li>
+                  <li><input id="sbbb" type="radio" name="position"> space-between-baseline</li>
+                  <li><input id="sbs" type="radio" name="position"> space-between-stretch</li>
+
+                  <li><input id="sa" type="radio" name="position"> space-around</li>
+                  <li><input id="sat" type="radio" name="position"> space-around-top</li>
+                  <li><input id="sac" type="radio" name="position"> space-around-center</li>
+                  <li><input id="sab" type="radio" name="position"> space-around-bottom</li>
+                  <li><input id="sabb" type="radio" name="position"> space-around-baseline</li>
+                  <li><input id="sas" type="radio" name="position" > space-around-stretch</li>
+                </ul>
+                <p>
+                    Sometimes you need to set a <strong>height</strong> or <strong>min-height</strong> for <strong>Container</strong>.
+                </p>
+              </form>
+            </div>
+
+
+
+
+
+
+          </div>
+
+
+          <div class="opt">
+            <h1>CHILDREN</h1>
+
+            <div class="input">
+              <label for="">Basis</label>
+              <form class="" >
+                <ul>
+                  <li><input id="basis" type="radio" name="basis" value="basis" checked> without basis(min-width: 100px)</li>
+                  <li><input id="basis1" type="radio" name="basis" value="basis1" checked> basis1</li>
+                  <li><input id="basis2" type="radio" name="basis" value="basis2"> basis2</li>
+                  <li><input id="basis3" type="radio" name="basis" value="basis3"> basis3</li>
+                  <li><input id="basis4" type="radio" name="basis" value="basis4"> basis4</li>
+                  <li><input id="basis5" type="radio" name="basis" value="basis5"> basis5</li>
+                  <li><input id="basis6" type="radio" name="basis" value="basis6"> basis6</li>
+                  <li><input id="basis7" type="radio" name="basis" value="basis7"> basis7</li>
+                  <li><input id="basis8" type="radio" name="basis" value="basis8"> basis8</li>
+                  <li><input id="basis9" type="radio" name="basis" value="basis9"> basis9</li>
+                  <li><input id="basis10" type="radio" name="basis" value="basis10"> basis10</li>
+                  <li><input id="basis11" type="radio" name="basis" value="basis11"> basis11</li>
+                  <li><input id="basis12" type="radio" name="basis" value="basis12"> basis12</li>
+                </ul>
+                <p>
+                  <strong>Basis</strong> is like a min-width, along with Flex does wonders!
+                </p>
+              </form>
+            </div>
+
+            <div class="input">
+
+              <label for="">Flex</label>
+              <form class="" >
+                <ul>
+                  <li><input id="wflex" type="radio" name="flex" > without flex</li>
+                  <li><input id="flex" type="radio" name="flex" > flex</li>
+                  <li><input id="flex1" type="radio" name="flex" > flex1</li>
+                  <li><input id="flex2" type="radio" name="flex" > flex2</li>
+                  <li><input id="flex3" type="radio" name="flex" > flex3</li>
+                  <li><input id="flex4" type="radio" name="flex" > flex4</li>
+                  <li><input id="flex5" type="radio" name="flex" > flex5</li>
+                  <li><input id="flex6" type="radio" name="flex" > flex6</li>
+                  <li><input id="flex7" type="radio" name="flex"> flex7</li>
+                  <li><input id="flex8" type="radio" name="flex" > flex8</li>
+                  <li><input id="flex9" type="radio" name="flex" > flex9</li>
+                  <li><input id="flex10" type="radio" name="flex" > flex10</li>
+                  <li><input id="flex11" type="radio" name="flex" > flex11</li>
+                  <li><input id="flex12" type="radio" name="flex" > flex12</li>
+                </ul>
+              </form>
+            </div>
+
+            <!-- <div class="input">
+
+              <label for="">Flex (Item 1)</label>
+              <form class="" >
+                <ul>
+                  <li><input id="oflex" type="radio" name="flex1" > flex</li>
+                  <li><input id="woflex" type="radio" name="flex1" > without flex</li>
+                </ul>
+              </form>
+            </div>
+
+
+            <div class="input">
+
+              <label for="">Basis (Item 1)</label>
+              <form class="" >
+                <ul>
+                  <li><input id="ob" type="radio" name="basis1" > basis11</li>
+                  <li><input id="ob2" type="radio" name="basis1" > basis2</li>
+                  <li><input id="ob3" type="radio" name="basis1" > basis3</li>
+                  <li><input id="ob4" type="radio" name="basis1" > basis4</li>
+                  <li><input id="ob5" type="radio" name="basis1" > basis5</li>
+                  <li><input id="ob6" type="radio" name="basis1" > basis6</li>
+
+                </ul>
+              </form>
+            </div> -->
+
+
+          </div>
+        </div>
+
+      </div>
+      <div class="item item2 flex basis11">
+        <div class="container center-center" id="aqui" style="height: 100vh; width: 100%">
+            <div class="itemp basis1" id="item1">
+              <div class="container center-center height">
+                <div class="">
+                  1
+                </div>
+              </div>
+            </div>
+            <div class="itemp basis1">
+              <div class="container center-center height">
+                <div class="">
+                  2
+                </div>
+              </div>
+            </div>
+            <div class="itemp basis1">
+              <div class="container center-center height">
+                <div class="">
+                  3
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="bower_components/jquery/jquery.js"></script>
+<script src="js/main.js"></script>
+  </body>
+</html>
